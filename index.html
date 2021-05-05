@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
+<body class="lock">
 	<div class="wrapper">
 		<div class="header">
 			<div class="logo">
@@ -18,15 +18,20 @@
 			<p class="under_tagline">
 				An award-winning construction management firm
 			</p>
-			<p class="scroll">SCROLL DOWN</p>
+			<div class="scroll">
+				<a href="#scroll" class="scroll-down flowing-scroll">SCROLL DOWN</a>
+			</div>
 		</div>
-		<div class="padding">
-			<div class="navbar">
+		<div class="navbar" id="scroll">
+			<div class="padding">
 				<nav class="nav">
 					<div class="logo_link">
 						<a href="">
 							<img src="images/logo_black_navbar.png" alt="">
 						</a>
+					</div>
+					<div class="navbar_burger">
+						<span></span>
 					</div>
 					<ul class="navbar_link">
 						<li><a href="">Home</a></li>
@@ -37,9 +42,10 @@
 					</ul>
 				</nav>
 			</div>
-
+		</div>
 			
 			<div class="content ">
+				<div class="padding">
 				<p class="title title_story">
 					our story
 				</p>
@@ -76,7 +82,7 @@
 						</div>
 					</div>
 				</div>
-				<section class="section">
+				<section class="section" >
 					<div class="title">
 						<p>
 							OUR CAPABILITIES
@@ -129,6 +135,7 @@
 				</div>
 			</div>
 		</div>
+		
 		<div class="city_section">
 			<div class="city_text">
 				Want to build <br> something amazing?
@@ -203,6 +210,8 @@
 			</div>
 		</footer>
 	</div>
-
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+	<script src="script.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>
 </html>
