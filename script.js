@@ -1,13 +1,13 @@
 $(document).ready(function(){
 	$('.navbar_burger').click(function(event){
 		$('.navbar_burger,.navbar_link').toggleClass('active');
-		$('body').toggleClass('lock')
+		$('body').toggleClass('lock');
 	});
 })
 $(document).ready(function(){
 	$('.flowing-scroll').click(function(event){
-		$('body').toggleClass('lock');
-		$('header').toggleClass('delete')
+		
+
 
 	});
 })

@@ -70,6 +70,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	max-width: 986px;
 	margin: 0 auto;
 	padding: 0 15px;
+	transition:all 0.5s ease 0s;
 }
 
 .tagline {
@@ -213,13 +214,15 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	.navbar_link{
 		position: fixed;
 		top: -100%;
+		left: 0;
 		height: 100%;
 		width: 100%;
 		background-color: #325aff;
 		display: block;
-		padding: 60px 0 0 0;
+		padding: 70px 0 0 0;
 		transition:all 0.5s ease 0s;
 		overflow: auto;
+
 	}
 	.navbar_link.active{
 		top: 0;
@@ -385,6 +388,9 @@ display: flex;
 		min-height: 100vh;
 	background: url("images/bgcity.png") center / cover no-repeat fixed;
 	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
 
 }
 .city_text {
