@@ -29,21 +29,6 @@ $('.scroll-top').on('click', function() {
   return false;
 });
 
-/*
-$(window).scroll(function (event) {
-    var top = $(window).scrollTop();
-     if(top >= 20){
-	     //show btn
-	     $('.scroll-top').toggleClass('show_button');
-	     console.log('show_button')
-     } else {
-     	//hide btn
-     	 $('.scroll-top').toggleClass('hide_button');
-     	 console.log('hide_button')
-     
-     }
-});
-*/
 const animItems = document.querySelectorAll('.anim-items')
 
 if (animItems.length > 0) {
@@ -76,3 +61,10 @@ if (animItems.length > 0) {
 		return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
 	}
 }
+//создание спойлера
+$(document).ready(function(){
+	$('.nav_title').click(function(event){
+		$(this).toggleClass('active').next().slideToggle(300);
+		$('.list_link').toggleClass('active');
+	});
+});
