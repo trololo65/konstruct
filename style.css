@@ -602,7 +602,7 @@ letter-spacing: 0.8461539149284363px;
 		padding-bottom: 20px;
 	}
 }
-@media (min-width: 968px){
+@media (min-width: 986px){
 	.section_text{
 		max-width: 405px;
 	}
